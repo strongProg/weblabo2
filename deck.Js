@@ -1,4 +1,6 @@
-const image = 
+const imoji = ['♦','♣','♥','♠']
+const valeur = ['A','2','3','4','5','6','7','8','9','10','J','K']
+
 class deck {
     constructeur(cartes) {
     this.cartes = cartes
@@ -6,8 +8,8 @@ class deck {
 }
 
 class cartes {
-    constructeur(image, valeur) {
-        this.image = image
+    constructeur(imoji, valeur) {
+        this.imoji = imoji
         this.valeur = valeur
     }
 }
