@@ -26,6 +26,10 @@ body {
     user-select: none;
 }
 
+.computer-deck {
+    background-color: green;
+}
+
 .player-deck {
     background-color: green;
 }
