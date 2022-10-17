@@ -7,5 +7,6 @@ const texte = document.querySelector(".text")
 
 const deck = new Deck()
 deck.brassage
-listeCarte.appendChild(deck.cards[0].getHTML())  
+for(var i = 0; i < 52; i++)
+    listeCarte.appendChild(deck.cards[i].getHTML())  
 
