@@ -39,7 +39,7 @@ class Card {
     }
 }
 
-
+/*
 function freshDeck() {
     return SUITS.flatMap(suit => {
         return VALUES.map(value => {

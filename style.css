@@ -8,7 +8,7 @@ box-sizing: border-box;
 body {
     margin: 2; 
     background-color: rgb(70, 29, 203);
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(2, 4rem);
     grid-template-rows: 7rem 3rem 7rem;
     gap: .5rem;
@@ -62,7 +62,7 @@ nav h1{
 }
 
 .card {
-    position: relative;
+    position:sticky;
     height: 100%;
     width: 100%;
     border: 1px solid rgb(232, 14, 221);
@@ -102,4 +102,9 @@ nav h1{
 }
 
 
+.player-card-slot{
+    display: flex;
+    margin: 2px;
+   
 
+}
