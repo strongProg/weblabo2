@@ -100,3 +100,11 @@ nav h1{
     right: .5rem;
     transform: rotate(180deg);
 }
+
+
+.player-card-slot{
+    display: flex;
+    margin: 2px;
+   
+
+}

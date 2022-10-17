@@ -6,9 +6,8 @@ const playerDeck = document.querySelector(".player-deck")
 const texte = document.querySelector(".text") 
 
 const deck = new Deck()
-const deck2 = new Deck()
-const deck3 = new Deck()
 
+deck.brassage()
 for (var i = 0; i < 13; i++)
     listeCarte.appendChild(deck.cards[i].getHTML())  
 for (var i = 13; i < 26; i++)    
