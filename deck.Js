@@ -33,11 +33,12 @@ class Card {
     getHTML() {
         const cardDiv = document.createElement('div')
         cardDiv.innerText = this.suit
-        cardDiv.classList.add("card",this.color)
-        cardDiv.dataset.value = ${this.value} ${this.suit}
-        return cardDiv  
+        cardDiv.classList.add("card", this.color)
+        cardDiv.dataset.value = `${this.value} ${this.suit}`
+        return cardDiv
     }
 }
+
 
 function freshDeck() {
     return SUITS.flatMap(suit => {
@@ -46,3 +47,7 @@ function freshDeck() {
         })
     })
 }
+
+
+
+
