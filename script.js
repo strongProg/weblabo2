@@ -1,19 +1,31 @@
-import Deck from "./deck.js"
-
-
-const listeCarte  = document.querySelector(".player-card-slot")
-const playerDeck = document.querySelector(".player-deck")
-const texte = document.querySelector(".text") 
-
-const deck = new Deck()
-
-deck.brassage()
-for (var i = 0; i < 13; i++)
-    listeCarte.appendChild(deck.cards[i].getHTML())  
-for (var i = 13; i < 26; i++)    
-    listeCarte.appendChild(deck.cards[i].getHTML()) 
-for (var i = 26; i < 39; i++)
-    listeCarte.appendChild(deck.cards[i].getHTML())
-for (var i = 39; i < 52; i++) 
-    listeCarte.appendChild(deck.cards[i].getHTML())  
+function affichage_cartes(){
+    //image = []
     
+        for(let i = 1; i < 53; i++){
+            let img = document.createElement("img")
+            img.src = "images/"+i+".png";
+            img.setAttribute("width", "100")
+            img.setAttribute("height", "100")        
+            document.getElementById("etat").appendChild(img)
+       // return img
+    }
+   
+}
+
+function brassage(){
+    let img = document.createElement("img")
+    img.src = "images/"+i+".png";
+    
+    let paquet = []
+    let arret = 'A♥'
+    let index =ensemble_cartes.indexOf(img);
+    let moitie1 = ensemble_cartes.slice(0,index);
+    let moitie2 = ensemble_cartes.slice(index + 1);
+   
+   }
+   
+    for (let e = 0; i < ensemble_cartes.length /2; e++) {
+      paquet.push(moitie1[e]);
+      paquet.push(moitie2[e]);
+    }
+    console.log(paquet)

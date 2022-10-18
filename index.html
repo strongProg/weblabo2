@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeu de cartes</title>
-    <script src = "script.js" type = "module"></script>
-    <link rel = "stylesheet" href = "style.css">
+    <title>Jeu de Cartes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    
+    /* style utiliser pour formater le text de entête */
+
+    /*Ce lien URL sont tirés de la chaines youtube Frenchcoder - web Developpement, 
+    titre: "creer un site Vitrine complet étape par étape en HTML", ils stockent certains front-text sur Google. */
+
     <nav>
-        <h1> JeuDeCartes</h1>
+        <h1>JeuxDeCartes</h1>
     </nav>
-    <!-- /* code du chaine youtube Web Dev Simplified
-    Titre: "How to create a simple game of card in javascript", aucun nom auteur spécifique est connu
-    Utiliser pour créer les images d'une carte, les classes text, player-deck, player-card-slot ont été utilisés à cet effet*/ -->
-    <div class = "text">lot</div>
-    <div class = "player-deck deck">52</div>
-    <div class = "player-card-slot card-slot"></div>
-     
+    <div id="etat"></div>
+
+    <script type= "text/javascript" src="script.js"></script>
+
+    <div class="menu">
+            <button onclick="affichage_cartes()">afficher cartes</button>
+            <button onclick="brasser()">brasser carte</button>
+
+    </div>
+    
+    
 </body>
-</html>

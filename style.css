@@ -1,27 +1,18 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
-
-
-*, *::after, *::before {
-box-sizing: border-box;
-}
-
+ 
 body {
-    margin: 2; 
-    background-color: rgb(70, 29, 203);
-    display:grid;
-    grid-template-columns: repeat(2, 4rem);
-    grid-template-rows: 7rem 3rem 7rem;
-    gap: .5rem;
-    padding-top: 1rem;
-
+    margin: 0;
+    padding: 0;
+    font-family: 'Monserrat' sans-serif ;
 }
 
 nav{
-    display: center;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: right;
-    align-items: right;
-    border-bottom: 5px solid #9591df;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px solid #9591df;
 }
 
 nav h1{
@@ -30,81 +21,97 @@ nav h1{
     font-size: 30px;
 }
 
-
-
-.deck {
-
-    height: 100%;
-    width: 100%;
-    border: 1px solid white;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    font-size: 3rem;
-    border-radius: .5rem;
-    color: white;
-    user-select: none;
+nav onglets{
+        margin-top: none;
+        margin-left: 300px;
 }
 
-.player-deck {
-    background-color: green;
+nav .onglets a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+
 }
 
 
-.text {
-    grid-column: span 2;
-    display:flex;
-    justify-content: left;
-    align-items:center;
-    color: white;
+header h1{
     font-family: 'Playfair Display', sans-serif;
-    font-size: 30px;    
+    font-size: 50px;
 }
 
-.card {
-    position:sticky;
-    height: 100%;
+header h4{
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .content .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.main .content .card .gauche{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+}
+
+.main .content .card.droite{
+    flex: 0 0 70%;
+}
+
+.main .content .card .droite img{
+    height: 200px;
+    width: 300px;
+    margin-top: 5px;
+
+}
+
+
+.main .card{
+    margin: 10px;
+}
+
+.nain .content .card .droite img{
+    height: 200px;
     width: 100%;
-    border: 1px solid rgb(232, 14, 221);
-    background-color: aliceblue;
-    border-radius: .5rem;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    font-size: 4rem; 
-
+    margin-top: 0px;
 }
 
-.card.red {
-    color: red;
+.main .content .card{
+    display: block;
 }
 
-.card.black {
-    color: black
-}
-
-.card::before,
-.card::after {
-    position: absolute;
-    content: attr(data-value);
-    font-size: 1rem;
-}
-
-.card::before {
-    top: .5rem;
-    left: .5rem;
-}
-
-.card::after {
-    bottom: .5rem;
-    right: .5rem;
-    transform: rotate(180deg);
+.menu button{
+    font-family: 'playfair Display' sans-serif;
+    width: 20%;
+    padding-bottom: 5px;
+    position:static;
+    bottom: 70px;
+    right: 50px;
+    
 }
 
 
-.player-card-slot{
-    display: flex;
-    margin: 2px;
+
+footer #contact{
+    color: rgb(181,181,181);
+}
+
+
+
+
    
-
-}
