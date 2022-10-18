@@ -15,9 +15,7 @@ function affichage_cartes(){
 function brassage(){
     let img = document.createElement("img")
     img.src = "images/"+i+".png";
-    
-    let paquet = []
-    let arret = 'A♥'
+    let ensemble_cartes = img.length
     let index =ensemble_cartes.indexOf(img);
     let moitie1 = ensemble_cartes.slice(0,index);
     let moitie2 = ensemble_cartes.slice(index + 1);
@@ -28,4 +26,4 @@ function brassage(){
       paquet.push(moitie1[e]);
       paquet.push(moitie2[e]);
     }
-    console.log(paquet)
+    
